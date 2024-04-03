@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Remove Patient</title>
+</head>
+<body>
+<h1>Remove Patient</h1>
+<form th:action="@{/patients/{id}/remove}" method="post">
+    Are you sure you want to remove this patient?<br/>
+    <input type="submit" value="Yes, Remove"/>
+</form>
+</body>
+</html>
